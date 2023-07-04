@@ -6,6 +6,7 @@ import { twclsx } from '@/libs/twclsx'
 export const metadata = {
   title: 'Quranify',
   description: 'Indonesian Language Based Digital Quran',
+  manifest: '/manifes.json'
 }
 
 export default function RootLayout({ children }) {
