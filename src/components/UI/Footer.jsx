@@ -11,7 +11,7 @@ export default function Footer() {
         <ul className='flex items-center gap-7'>
           {Path.map((x) => {
             return (
-              <li>
+              <li key={x.label}>
                 <Link className='text-gray-200' href={x.path}>{x.label}</Link>
               </li>
             )
