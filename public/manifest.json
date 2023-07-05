@@ -9,6 +9,21 @@
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
+  "categories": ["book", "quran", "alquran"],
+  "screenshots" : [
+    {
+      "src": "/images/IMG_0206.png",
+      "sizes": "750x1624",
+      "type": "image/png",
+      "platform": "wide"
+    },
+    {
+      "src": "/images/IMG_0207.png",
+      "sizes": "750x1624",
+      "type": "image/png",
+      "platform": "wide"
+    }
+  ],
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
