@@ -7,7 +7,7 @@ import Head from 'next/head'
 export const metadata = {
   title: 'Quranify',
   description: 'Indonesian Language Based Digital Quran',
-  manifest: '/manifes.json'
+  manifest: '/manifest.json'
 }
 
 export default function RootLayout({ children }) {
