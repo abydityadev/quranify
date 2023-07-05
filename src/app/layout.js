@@ -2,6 +2,7 @@ import '@/assets/styling/globals.css'
 import Navbar from '@/components/UI/Navbar'
 import Footer from '@/components/UI/Footer'
 import { twclsx } from '@/libs/twclsx'
+import Head from 'next/head'
 
 export const metadata = {
   title: 'Quranify',

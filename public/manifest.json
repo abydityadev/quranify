@@ -1,8 +1,8 @@
 {
   "name": "Quranify",
   "short_name": "Quranify",
-  "theme_color": "#E4E5E8",
-  "background_color": "#030712",
+  "theme_color": "#060c1c",
+  "background_color": "#F9FAFB",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
