@@ -6,7 +6,7 @@ import Head from 'next/head'
 
 export const metadata = {
   title: 'Quranify',
-  description: 'Indonesian Language Based Digital Quran',
+  description: 'Digital Quran Based In Indonesia',
   manifest: '/manifest.json'
 }
 
