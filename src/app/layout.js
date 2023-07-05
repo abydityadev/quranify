@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={twclsx('bg-gray-950 text-gray-50 font-sofia')}>
         <Navbar />
-        <main className='max-w-2xl mx-auto pt-20 px-2 sm:px-0'>
+        <main className={twclsx('max-w-2xl mx-auto pt-20 px-2 sm:px-0')}>
           {children}
         </main>
         <Footer />

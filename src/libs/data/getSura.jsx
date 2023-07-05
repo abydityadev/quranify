@@ -3,5 +3,10 @@ export default async function getSura() {
       cache: 'no-cache'
   })
   const data = await response.json()
+
+  if (!response.ok) {
+    console.log('nay')
+  }
+
   return data
 }

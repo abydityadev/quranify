@@ -12,6 +12,11 @@ export default async function page({ params: { nomor } }) {
                 <h1 className='text-2xl font-medium leading-tight sm:text-3xl text-gray-50 font-arab'>{getSura.data.nama} . {getSura.data.namaLatin}</h1>
                 <p>({getSura.data.arti}) . {getSura.data.jumlahAyat} Verses</p>
             </Banner>
+            <div className='flex justify-center'>
+                <audio className='h-8 mb-8' controls >
+                    <source src={getSura.data.audioFull['02']} type="audio/ogg" />
+                </audio>
+            </div>
             <ul>
                 {getSura.data.ayat.map((x) => {
                     return (
@@ -30,16 +35,16 @@ export default async function page({ params: { nomor } }) {
             <section>
                 <div className='flex justify-between'>
                     {getSura.data.suratSebelumnya === false
-                        ?   <div></div>
-                        :   <Link href={`/surah/${getSura.data.suratSebelumnya.nomor}`} className={twclsx('border border-gray-700 px-5 py-3 rounded')}>
-                                ⬅️ {getSura.data.suratSebelumnya.namaLatin} - {getSura.data.suratSebelumnya.nama}
-                            </Link>
+                        ? <div></div>
+                        : <Link href={`/surah/${getSura.data.suratSebelumnya.nomor}`} className={twclsx('border border-gray-700 px-5 py-3 rounded')}>
+                            ⬅️ {getSura.data.suratSebelumnya.namaLatin} - {getSura.data.suratSebelumnya.nama}
+                        </Link>
                     }
                     {getSura.data.suratSelanjutnya === false
-                        ?   <div></div>
-                        :   <Link href={`/surah/${getSura.data.suratSelanjutnya.nomor}`} className={twclsx('border border-gray-700 px-5 py-3 rounded')}>
-                                {getSura.data.suratSelanjutnya.namaLatin} - {getSura.data.suratSelanjutnya.nama} ➡️
-                            </Link>
+                        ? <div></div>
+                        : <Link href={`/surah/${getSura.data.suratSelanjutnya.nomor}`} className={twclsx('border border-gray-700 px-5 py-3 rounded')}>
+                            {getSura.data.suratSelanjutnya.namaLatin} - {getSura.data.suratSelanjutnya.nama} ➡️
+                        </Link>
                     }
                 </div>
             </section>
