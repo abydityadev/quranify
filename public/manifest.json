@@ -25,6 +25,12 @@
       "platform": "wide"
     }
   ],
+  "shortcuts": [
+    {
+      "name": "Surah",
+      "url": "/surah"
+    }
+  ],
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
