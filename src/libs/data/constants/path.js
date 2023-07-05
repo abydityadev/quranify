@@ -7,6 +7,10 @@ const Path = [
         "label": "Surah",
         "path": "/surah"
     },
+    {
+        "label": "Tasbeeh",
+        "path": "/tasbeeh"
+    },
 ]
 
 export default Path

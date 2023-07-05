@@ -2,7 +2,7 @@ import Banner from '@/components/Extra/Banner'
 import Sura from '@/components/Extra/Sura'
 import React from 'react'
 
-export default function page() {
+export default async function page() {
   return (
     <>
       <Banner>
