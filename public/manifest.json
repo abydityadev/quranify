@@ -2,6 +2,7 @@
   "name": "Quranify",
   "short_name": "Quranify",
   "description": "Digital Quran Based In Indonesia",
+  "display_override": ["window-controls-overlay", "standalone"],
   "theme_color": "#060c1c",
   "background_color": "#F9FAFB",
   "display": "standalone",
