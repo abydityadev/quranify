@@ -19,9 +19,9 @@ export default function Navbar() {
                         {Path.map((x) => {
                             return (
                                 <li key={x.label}>
-                                    <Link className={twclsx('text-slate-200 font-medium hover:bg-gray-900 px-2 py-1 rounded',
+                                    <Link className={twclsx('text-slate-200 font-medium hover:bg-gray-900 px-2 py-1 rounded border border-transparent',
                                         pathname === x.path
-                                        ? 'border border-gray-700'
+                                        ? 'border-gray-700'
                                         : null
                                     )} href={x.path}>{x.label}</Link>
                                 </li>
