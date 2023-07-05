@@ -15,7 +15,7 @@ export default function Navbar() {
             <nav className={twclsx('p-5')}>
                 <div className={twclsx('max-w-2xl mx-auto flex justify-between')}>
                     <Link className={twclsx('font-bold text-lg')} href={'/'}>Quranify</Link>
-                    <ul className={twclsx('flex items-center gap-3')}>
+                    <ul className={twclsx('flex items-center gap-1')}>
                         {Path.map((x) => {
                             return (
                                 <li key={x.label}>
