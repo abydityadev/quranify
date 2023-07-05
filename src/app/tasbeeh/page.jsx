@@ -4,7 +4,7 @@ import { AiOutlinePlusCircle } from 'react-icons/ai'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-export default function page() {
+export default function Page() {
     const [Tasbeeh, setTasbeeh] = useState(0)
 
     return (
