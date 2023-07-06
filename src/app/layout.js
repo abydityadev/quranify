@@ -3,6 +3,7 @@ import Navbar from '@/components/UI/Navbar'
 import Footer from '@/components/UI/Footer'
 import { twclsx } from '@/libs/twclsx'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Quranify',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className={twclsx('max-w-2xl mx-auto pt-20 px-2 sm:px-0')}>
           {children}
+          <Analytics />
         </main>
         <Footer />
       </body>
