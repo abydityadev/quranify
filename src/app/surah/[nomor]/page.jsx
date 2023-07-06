@@ -20,15 +20,13 @@ export default async function page({ params: { nomor } }) {
             <ul>
                 {getSura.data.ayat.map((x) => {
                     return (
-                        <>
-                            <li className='mb-7'>
-                                <div className='p-6 border-l-2 shadow border-l-gray-800'>
-                                    <h1 className='text-lg font-light'><span className='text-gray-300 mr-3'>{getSura.data.nomor} : {x.nomorAyat}</span> <span className={twclsx('font-arabic')}>{x.teksArab}</span></h1>
-                                    <p className='text-right'>{x.teksLatin}</p>
-                                    <p className='text-right text-xs font-thin'>{x.teksIndonesia}</p>
-                                </div>
-                            </li>
-                        </>
+                        <li className='mb-7'>
+                            <div className='p-6 border-l-2 shadow border-l-gray-800'>
+                                <h1 className='text-lg font-light'><span className='text-gray-300 mr-3'>{getSura.data.nomor} : {x.nomorAyat}</span> <span className={twclsx('font-arabic')}>{x.teksArab}</span></h1>
+                                <p className='text-right'>{x.teksLatin}</p>
+                                <p className='text-right text-xs font-thin'>{x.teksIndonesia}</p>
+                            </div>
+                        </li>
                     )
                 })}
             </ul>
