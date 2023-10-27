@@ -1,5 +1,5 @@
 export default async function getSuraDetail(nomor) {
-    const response = await fetch(`https://api.equran.id/api/v2/surat/${nomor}`, {
+    const response = await fetch(`https://equran.id/api/v2/surat/${nomor}`, {
         cache: 'no-cache'
     })
     
